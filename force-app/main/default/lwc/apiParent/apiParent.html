@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="API Parent">
+        <lightning-input label="Name" placeholder="Enter Your Name" onchange={handleChangeName}></lightning-input>
+        <p>{lName}</p>
+        <c-api-child last-name={lName}></c-api-child>
+    </lightning-card>
+</template>

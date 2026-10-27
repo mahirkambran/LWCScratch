@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Wired Accounts Data">
+        <lightning-input label="Search" placeholder="Enter Search Name" onchange={handleSearchText}></lightning-input>
+        <template for:each={accounts} for:item="account">
+            <p key={account.Id}>{account.Id} - {account.Name} - {account.Rating}</p>
+        </template>
+    </lightning-card>
+</template>

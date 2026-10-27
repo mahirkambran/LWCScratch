@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="LMS Publisher">
+        <lightning-input label="Message" placeholder="Enter Your Message" onchange={ChangeMessageEvent}></lightning-input>
+        <p>{messageText}</p>
+        <lightning-button label="Submit" onclick={handleMessageEvent}></lightning-button>
+    </lightning-card>
+</template>

@@ -1,0 +1,7 @@
+<template>
+    <lightning-card lwc:if={accounts} title="Wired Data Complete">
+        <template  for:each={accounts} for:item="account">
+            <p key={account.Id}>{account.Id} - {account.Name}</p>
+        </template>
+    </lightning-card>
+</template>

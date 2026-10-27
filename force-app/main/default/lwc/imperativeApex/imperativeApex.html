@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Imperative Apex">
+        <lightning-input label="Contact Name" placeholder="Enter Contact Name" onchange={handleContactSearch}></lightning-input>
+        <lightning-button label="Search" onclick={contactSearchEvent}></lightning-button>
+        <template for:each={contacts} for:item="contact">
+            <p key={contact.Id}>{contact.Id} - {contact.Name}</p>
+        </template>
+    </lightning-card>
+</template>

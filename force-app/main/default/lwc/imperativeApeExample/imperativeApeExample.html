@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Imperative Apex With Example">
+        <lightning-input label="Search Option" onchange={handleSearchText}></lightning-input>
+        <lightning-button label="Search" onclick={handleButtonClick}></lightning-button>
+        <template for:each={accountsData} for:item="account">
+            <p key={account.Id}>
+                {account.Id} - {account.Name}
+            </p>
+        </template>
+    </lightning-card>
+</template>

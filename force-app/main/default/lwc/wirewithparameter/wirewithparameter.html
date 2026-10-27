@@ -1,0 +1,8 @@
+<template>
+    <lightning-card>
+        <lightning-input label="Search" placeholder="Enter Name" onchange={nameChangeEvent}></lightning-input>
+        <template for:each={accounts} for:item="account">
+            <p key={accounts.Id}>{account.Id} {account.Name}</p>
+        </template>
+    </lightning-card>
+</template>

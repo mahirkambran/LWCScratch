@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Publisher">
+        <lightning-input label="Name" placeholder="Enter your name" name="userName" onchange={changeValueEvent}></lightning-input>
+        <lightning-input label="Phone" placeholder="Enter your Phone" name="phone" onchange={changeValueEvent}></lightning-input>
+
+        <p>{userName}</p>
+        <p>{phone}</p>
+
+        <lightning-button label="Submit" onclick={sendMessageEvent}></lightning-button>
+    </lightning-card>
+</template>
